@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Structure and Delivery - Consolidated Course View</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- CCV-specific CSS -->
+    <link href="css/ccv.css" rel="stylesheet">
+
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container"><!-- nav container-->
+      <div class="nav navbar-default navbar-static-top" role="navigation">
+        <div class="nav navbar-left">
+          <ul class="breadcrumb">
+            <li class="menu-item"><a href="home.html">Home</a></li>
+            <li class="menu-item dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Main Menu <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="menu-item dropdown dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Courses</a>
+                  <ul class="dropdown-menu">
+                    <li class="menu-item"><a href="structure_and_delivery_search.html">Structure and Delivery</a></li>
+                    <li class="menu-item"><a href="#">Coursework Details</a></li>
+                    <li class="menu-item"><a href="#">Examiners and Assessors</a></li>
+                    <li class="menu-item"><a href="#">Term Tests</a></li>
+                    <li class="menu-item"><a href="#">Examination Details</a></li>
+                    <li class="menu-item"><a href="#">Teaching Timetable</a></li>
+                    <li class="menu-item"><a href="#">Exam Timetable</a></li>
+                    <li class="menu-item"><a href="#">Start/End Dates</a></li>
+                    <li class="menu-item"><a href="#">Results</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item dropdown dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Personal Details</a>
+                  <ul class="dropdown-menu">
+                    <li class="menu-item"><a href="#">Personal Details</a></li>
+                    <li class="menu-item"><a href="#">Academic Staff Unavailability</a></li>
+                    <li class="menu-item"><a href="#">Room Booking Permissions</a></li>
+                    <li class="menu-item"><a href="#">CCV Permissions</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item dropdown dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Reference Data</a>
+                  <ul class="dropdown-menu">
+                    <li class="menu-item"><a href="#">Locations</a></li>
+                    <li class="menu-item"><a href="#">Location Suitabilities</a></li>
+                    <li class="menu-item"><a href="#">Room Booking Administrators</a></li>
+                    <li class="menu-item"><a href="#">Department Meetings and Seminars</a></li>
+                    <li class="menu-item"><a href="#">Faculty Meetings</a></li>
+                    <li class="menu-item"><a href="#">Committees</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Review Courses <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="structure_and_delivery_search.html">Structure and Delivery</a></li>
+                <li><a href="#">Coursework Details</a></li>
+                <li><a href="#">Examiners and Assessors</a></li>
+                <li><a href="#">Term Tests</a></li>
+                <li><a href="#">Examination Details</a></li>
+                <li><a href="#">Teaching Timetable</a></li>
+                <li><a href="#">Exam Timetable</a></li>
+                <li><a href="#">Start/End Dates</a></li>
+                <li><a href="#">Results</a></li>
+              </ul>
+            </li>
+            <li class="menu-item active">Structure and Delivery</li>
+          </ul>
+        </div>
+
+        <div class="navbar-right">
+          <p class="navbar-text">
+            Professor Finn Huckleberry | <a href="#">My Info</a>
+          </p>
+        </div>
+      </div>
+    </div><!-- /nav container-->
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-primary">
+            <div class="panel-body">
+              <div class="panel-group no-bottom-margin">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="panel panel-info no-bottom-margin"><!-- search -->
+                      <div class="panel-heading">
+                        <h4 class="panel-title">Structure and Delivery</h4>
+                      </div>
+                      <div class="panel-body">
+                        <table class="table no-bottom-margin">
+                          <tbody>
+                            <tr>
+                              <td>Subject</td>
+                              <td><div id="subject-search"><input class="typeahead" type="text" value="TESTSCI"/></div></td>
+                            </tr>
+                            <tr>
+                              <td>Catalog Nbr</td>
+                              <td><input type="text"/></td>
+                            </tr>
+                            <tr>
+                              <td>Campus</td>
+                              <td><input type="text"/></td>
+                            </tr>
+                            <tr>
+                              <td>Department</td>
+                              <td><input type="text"/></td>
+                            </tr>
+                            <tr>
+                              <td>Faculty</td>
+                              <td><input type="text"/></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <button type="button" class="btn btn-default">Search</button>
+                              </td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /search -->
+                <div>&nbsp;</div>
+                <div class="panel panel-info no-bottom-margin"><!-- search results -->
+                  <div class="panel-heading">
+                    <h4 class="panel-title">Search Results</h4>
+                  </div>
+                  <div class="panel-body no-bottom-margin">
+                    <table class="table no-bottom-margin">
+                      <thead>
+                        <tr>
+                          <th>Subject</th>
+                          <th>Catalog Nbr</th>
+                          <th>Campus</th>
+                          <th>Department</th>
+                          <th>Faculty</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="structure_and_delivery.html">TESTSCI</a></td>
+                          <td>101</td>
+                          <td>City</td>
+                          <td>ETSO</td>
+                          <td>ACADSERV</td>
+                        </tr>
+                        <tr>
+                          <td><a href="structure_and_delivery.html">TESTSCI</a></td>
+                          <td>303</td>
+                          <td>City</td>
+                          <td>ETSO</td>
+                          <td>ACADSERV</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div><!-- /search results -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/typeahead.js"></script>
+    <script src="js/reference.js"></script>
+    <script src="js/ccv.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+      /*!
+       * IE10 viewport hack for Surface/desktop Windows 8 bug
+       * Copyright 2014 Twitter, Inc.
+       * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+       * details, see http://creativecommons.org/licenses/by/3.0/.
+       */
+
+      // See the Getting Started docs for more information:
+      // http://getbootstrap.com/getting-started/#support-ie10-width
+
+      (function () {
+        'use strict';
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+          var msViewportStyle = document.createElement('style')
+          msViewportStyle.appendChild(
+            document.createTextNode(
+              '@-ms-viewport{width:auto!important}'
+            )
+          )
+          document.querySelector('head').appendChild(msViewportStyle)
+        }
+      })();
+    </script>
+  </body>
+</html>

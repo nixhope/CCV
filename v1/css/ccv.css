@@ -1,0 +1,101 @@
+/* Sourced from http://www.bootply.com/92442 */
+.dropdown-submenu {
+  position:relative;
+}
+.dropdown-submenu>.dropdown-menu{
+  top:0;
+  left:100%;
+  margin-top:-6px;
+  margin-left:-1px;
+  -webkit-border-radius:0 6px 6px 6px;
+  -moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu:hover {background: #e2e1e1;}
+/*.dropdown-submenu:hover>.dropdown-menu{display:block;}*/
+.dropdown-submenu>a:after{
+  display:block;
+  content:" ";
+  float:right;
+  width:0;
+  height:0;
+  border-color:transparent;
+  border-style:solid;
+  border-width:5px 0 5px 5px;
+  border-left-color:#cccccc;
+  margin-top:5px;
+  margin-right:-10px;}
+.dropdown-submenu:hover>a:after{
+  border-left-color:#ffffff;
+}
+.dropdown-submenu.pull-left{
+  float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu{
+  left:-100%;
+  margin-left:10px;
+  -webkit-border-radius:6px 0 6px 6px;
+  -moz-border-radius:6px 0 6px 6px;
+  border-radius:6px 0 6px 6px;
+}
+
+/* Bootstrap theme overrides */
+.breadcrumb {
+  /*Making the breadcrumb bar transparent*/
+  background-color: #f8f8f8; /*For IE8*/
+  background-color: rgba(245, 245, 245, 0); /*background-color: #f5f5f5;*/
+}
+.panel-info {
+  border-color: #BAD0E7; /*border-color: #bce8f1;*/
+}
+.panel-info > .panel-heading {
+  border-color: #BAD0E7; /*border-color: #bce8f1;*/
+}
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-color: #BAD0E7; /*border-top-color: #bce8f1;*/
+}
+.panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-color: #BAD0E7; /*border-bottom-color: #bce8f1;*/
+}
+.nav-tabs > li > a {
+  background-color: #f8f8f8;
+  border-color: #ddd;
+} /* I like my tabs to be clearly indicated */
+
+/* Additions */
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+.nav .breadcrumb {
+  float: left;
+  margin: 7px 0px;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px;
+}
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.left-margin {
+  margin-left: 30px;
+}
+
+.tt-dropdown-menu {
+  width: 422px;
+  margin-top: 12px;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
