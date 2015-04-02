@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Structure and Delivery - Consolidated Course View</title>
+    <title>Course View - Search</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,92 +19,29 @@
 
   <body>
 
+    <a href="http://www.auckland.ac.nz"><img src="images/header.png"/></a>
+    <a href="index.html">
+      <font size="10" color="green">Course View</font> <!--Yes, this is terrible HTML -->
+    </a>
+
     <div class="container"><!-- nav container-->
       <div class="nav navbar-default navbar-static-top" role="navigation">
-        <div class="nav navbar-left">
-          <ul class="breadcrumb">
-            <li class="menu-item"><a href="home.html">Home</a></li>
-            <li class="menu-item dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Main Menu <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="menu-item dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Courses</a>
-                  <ul class="dropdown-menu">
-                    <li class="menu-item"><a href="structure_and_delivery_search.html">Structure and Delivery</a></li>
-                    <li class="menu-item"><a href="#">Coursework Details</a></li>
-                    <li class="menu-item"><a href="#">Examiners and Assessors</a></li>
-                    <li class="menu-item"><a href="#">Term Tests</a></li>
-                    <li class="menu-item"><a href="#">Examination Details</a></li>
-                    <li class="menu-item"><a href="#">Teaching Timetable</a></li>
-                    <li class="menu-item"><a href="#">Exam Timetable</a></li>
-                    <li class="menu-item"><a href="#">Start/End Dates</a></li>
-                    <li class="menu-item"><a href="#">Results</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Personal Details</a>
-                  <ul class="dropdown-menu">
-                    <li class="menu-item"><a href="#">Personal Details</a></li>
-                    <li class="menu-item"><a href="#">Academic Staff Unavailability</a></li>
-                    <li class="menu-item"><a href="#">Room Booking Permissions</a></li>
-                    <li class="menu-item"><a href="#">CCV Permissions</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Reference Data</a>
-                  <ul class="dropdown-menu">
-                    <li class="menu-item"><a href="#">Locations</a></li>
-                    <li class="menu-item"><a href="#">Location Suitabilities</a></li>
-                    <li class="menu-item"><a href="#">Room Booking Administrators</a></li>
-                    <li class="menu-item"><a href="#">Department Meetings and Seminars</a></li>
-                    <li class="menu-item"><a href="#">Faculty Meetings</a></li>
-                    <li class="menu-item"><a href="#">Committees</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Review Courses <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="structure_and_delivery_search.html">Structure and Delivery</a></li>
-                <li><a href="#">Coursework Details</a></li>
-                <li><a href="#">Examiners and Assessors</a></li>
-                <li><a href="#">Term Tests</a></li>
-                <li><a href="#">Examination Details</a></li>
-                <li><a href="#">Teaching Timetable</a></li>
-                <li><a href="#">Exam Timetable</a></li>
-                <li><a href="#">Start/End Dates</a></li>
-                <li><a href="#">Results</a></li>
-              </ul>
-            </li>
-            <li class="menu-item active">Structure and Delivery</li>
-          </ul>
-        </div>
 
-        <div class="navbar-right">
-          <p class="navbar-text">
-            Professor Finn Huckleberry | <a href="#">My Info</a>
-          </p>
-        </div>
       </div>
     </div><!-- /nav container-->
 
     <div class="container">
 
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
           <div class="panel panel-primary">
             <div class="panel-body">
               <div class="panel-group no-bottom-margin">
                 <div class="row">
-                  <div class="col-sm-8">
+                  <div class="col-sm-12">
                     <div class="panel panel-info no-bottom-margin"><!-- search -->
                       <div class="panel-heading">
-                        <h4 class="panel-title">Structure and Delivery</h4>
+                        <h4 class="panel-title">Search Courses</h4>
                       </div>
                       <div class="panel-body">
                         <table class="table no-bottom-margin">
@@ -159,14 +96,14 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td><a href="structure_and_delivery.html">TESTSCI</a></td>
+                          <td><a href="course_view.html">TESTSCI</a></td>
                           <td>101</td>
                           <td>City</td>
                           <td>ETSO</td>
                           <td>ACADSERV</td>
                         </tr>
                         <tr>
-                          <td><a href="structure_and_delivery.html">TESTSCI</a></td>
+                          <td><a href="course_view.html">TESTSCI</a></td>
                           <td>303</td>
                           <td>City</td>
                           <td>ETSO</td>
@@ -174,6 +111,25 @@
                         </tr>
                       </tbody>
                     </table>
+                    <nav>
+                      <ul class="pagination">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">1.61</a></li>
+                        <li><a href="#">3.14</a></li>
+                        <li><a href="#">i</a></li>
+                        <li><a href="#">17</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div><!-- /search results -->
@@ -183,7 +139,8 @@
       </div>
 
     </div> <!-- /container -->
-
+    
+    <img src="images/footer.png"/>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

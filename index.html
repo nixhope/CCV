@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
-    <title>Home - Consolidated Course View</title>
+    <title>Course View - Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,129 +17,21 @@
   </head>
 
   <body>
+    <a href="http://www.auckland.ac.nz"><img src="images/header.png"/></a>
+    <a href="index.html">
+      <font size="10" color="green">Course View</font> <!--Yes, this is terrible HTML -->
+    </a>
 
     <div class="container"><!-- nav container-->
       <div class="nav navbar-default navbar-static-top" role="navigation">
-        <div class="nav navbar-left">
-          <ul class="breadcrumb">
-            <li class="menu-item"><a href="home.html">Home</a></li>
-            <li class="menu-item dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Main Menu <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="menu-item dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Courses</a>
-                  <ul class="dropdown-menu">
-                    <li class="menu-item"><a href="structure_and_delivery.html">Structure and Delivery</a></li>
-                    <li class="menu-item"><a href="#">Coursework Details</a></li>
-                    <li class="menu-item"><a href="#">Examiners and Assessors</a></li>
-                    <li class="menu-item"><a href="#">Term Tests</a></li>
-                    <li class="menu-item"><a href="#">Examination Details</a></li>
-                    <li class="menu-item"><a href="#">Teaching Timetable</a></li>
-                    <li class="menu-item"><a href="#">Exam Timetable</a></li>
-                    <li class="menu-item"><a href="#">Start/End Dates</a></li>
-                    <li class="menu-item"><a href="#">Results</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Personal Details</a>
-                  <ul class="dropdown-menu">
-                    <li class="menu-item"><a href="#">Personal Details</a></li>
-                    <li class="menu-item"><a href="#">Academic Staff Unavailability</a></li>
-                    <li class="menu-item"><a href="#">Room Booking Permissions</a></li>
-                    <li class="menu-item"><a href="#">CCV Permissions</a></li>
-                  </ul>
-                </li>
-                <li class="menu-item dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Review Reference Data</a>
-                  <ul class="dropdown-menu">
-                    <li class="menu-item"><a href="#">Locations</a></li>
-                    <li class="menu-item"><a href="#">Location Suitabilities</a></li>
-                    <li class="menu-item"><a href="#">Room Booking Administrators</a></li>
-                    <li class="menu-item"><a href="#">Department Meetings and Seminars</a></li>
-                    <li class="menu-item"><a href="#">Faculty Meetings</a></li>
-                    <li class="menu-item"><a href="#">Committees</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
 
-        <div class="navbar-right">
-          <p class="navbar-text">
-            Professor Finn Huckleberry | <a href="#">My Info</a>
-          </p>
-        </div>
       </div>
     </div><!-- /nav container-->
 
     <div class="container">
 
       <div class="row">
-        <div class="col-sm-4">
-          <div class="panel panel-primary">
-            <div class="panel-body">
-              <div class="panel-group no-bottom-margin" id="accordion1">
-                <div class="panel panel-info no-bottom-margin"><!-- review courses -->
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapsecourses">
-                      Review Courses
-                    </a></h4>
-                  </div>
-                  <div id="collapsecourses" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                      <p><a href="structure_and_delivery.html">Structure and Delivery</a></p>
-                      <p><a href="#">Coursework Details</a></p>
-                      <p><a href="#">Examiners and Assessors</a></p>
-                      <p><a href="#">Term Tests</a></p>
-                      <p><a href="#">Examination Details</a></p>                        
-                      <p><a href="#">Teaching Timetable</a></p>
-                      <p><a href="#">Exam Timetable</a></p>
-                      <p><a href="#">Start/End Dates</a></p>
-                      <p class="no-bottom-margin"><a href="#">Results</a></p>
-                    </div>
-                  </div>
-                </div><!-- /review courses -->
-                <div class="panel panel-info"><!-- review personal details -->
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapsepersonal">
-                      Review Personal Details
-                    </a></h4>
-                  </div>
-                  <div id="collapsepersonal" class="panel-collapse collapse out">
-                    <div class="panel-body">
-                      <p><a href="#">Personal Details</a></p>
-                      <p><a href="#">Academic Staff Unavailability</a></p>
-                      <p><a href="#">Room Booking Permissions</a></p>
-                      <p class="no-bottom-margin"><a href="#">CCV Permissions</a></p>
-                    </div>
-                  </div>
-                </div><!-- /review personal details -->
-                <div class="panel panel-info"><!-- review reference data -->
-                  <div class="panel-heading">
-                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapsereference">
-                      Review Reference Data
-                    </a></h4>
-                  </div>
-                  <div id="collapsereference" class="panel-collapse collapse out">
-                    <div class="panel-body">
-                      <p><a href="#">Locations</a></p>
-                      <p><a href="#">Location Suitabilities</a></p>
-                      <p><a href="#">Room Booking Administrators</a></p>
-                      <p><a href="#">Department Meetings and Seminars</a></p>
-                      <p><a href="#">Faculty Meetings</a></p>
-                      <p class="no-bottom-margin"><a href="#">Committees</a></p>
-                    </div>
-                  </div>
-                </div><!-- /review reference data -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4"><!-- middle -->
+        <div class="col-sm-6"><!-- middle -->
           <div class="panel panel-primary">
             <div class="panel-body">
               <div class="panel panel-info no-bottom-margin">
@@ -164,15 +55,33 @@
                     <table class="table no-bottom-margin">
                       <tbody>
                         <tr>
-                          <td><a href="#">TESTSCI 101</a></td>
+                          <td><a href="course_view.html" class="course-link">TESTSCI 101</a></td>
                           <td>City</td>
                         </tr>
                         <tr>
-                          <td><a href="#">TESTSCI 301</a></td>
+                          <td><a href="course_view.html" class="course-link">TESTSCI 301</a></td>
                           <td>City</td>
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-primary">
+            <div class="panel-body">
+              <div class="panel panel-info no-bottom-margin">
+                <div id="collapsemycourses" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <center>
+                      <a href="search.html">
+                        <button class="btn btn-lg btn-success" type="button">
+                          SEARCH COURSES
+                        </button>
+                      </a>
+                    </center>
                   </div>
                 </div>
               </div>
@@ -198,11 +107,11 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Change request for <a href="#">TESTSCI 101</a></td>
+                          <td><a href="#">Outstanding change request</a> for <a href="#" class="course-link">TESTSCI 101</a></td>
                           <td>TSO Action in Progress</td>
                         </tr>
                         <tr>
-                          <td>Change request for <a href="#">TESTSCI 301</a></td>
+                          <td><a href="#">Outstanding change request</a> for <a href="#" class="course-link">TESTSCI 301</a></td>
                           <td>Awaiting Faculty Approval</td>
                         </tr>
                         <tr>
@@ -210,7 +119,7 @@
                           <td>Pending</td>
                         </tr>
                         <tr>
-                          <td>Approve change for <a href="#">TESTSCI 301</a></td>
+                          <td><a href="#">Approve change</a> for <a href="#" class="course-link">TESTSCI 301</a></td>
                           <td>Requires Approval</td>
                         </tr>
                       </tbody>
@@ -222,7 +131,7 @@
           </div>  
         </div><!-- /middle -->
 
-        <div class="col-sm-4">  
+        <div class="col-sm-6">  
           <div class="panel panel-primary">
             <div class="panel-body">
               <div class="panel panel-info">
@@ -277,7 +186,7 @@
                           <a data-toggle="collapse" href="#nextweekpanel">Next Week</a>
                         </p>
                       </div>
-                      <div id="nextweekpanel" class="panel-collapse collapse out">
+                      <div id="nextweekpanel" class="panel-collapse collapse in">
                         <div class="panel-body">
                           <p><a href="#">WRB 2015</a> available</p>
                           <p class="no-bottom-margin"><a href="#">2015 enrolments</a> available</p>
@@ -293,6 +202,8 @@
       </div>
 
     </div> <!-- /container -->
+    
+    <img src="images/footer.png"/>
 
 
     <!-- Bootstrap core JavaScript
