@@ -27,169 +27,216 @@
 
     <div class="container"><!-- nav container-->
       <div class="nav navbar-default navbar-static-top" role="navigation">
-
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">My Courses</a></li>
+          <li><a href="#">Search Courses</a></li>
+          <li><a href="#">Timeline</a></li>
+          <li><a href="#">Tasks</a></li>
+          <li><a href="#">Reports and Metrics</a></li>
       </div>
     </div><!-- /nav container-->
 
     <div class="container">
 
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="panel panel-primary">
-            <div class="panel-body">
-              <div class="structure_and_delivery_details_here_now">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a data-toggle="tab" href="#structure">
-                    Structure and Delivery
-                  </a></li>
-                  <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                      Examination and Assessment <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a data-toggle="tab" href="#coursework">Coursework Details</a></li>
-                      <li><a data-toggle="tab" href="#examiners">Examiners and Assessors</a></li>
-                      <li><a data-toggle="tab" href="#termtests">Term Tests</a></li>
-                      <li><a data-toggle="tab" href="#examination">Examination Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a data-toggle="tab" href="#examtimetable">
-                    Exam Timetable
-                  </a></li>
-                  <li><a data-toggle="tab" href="#teachingtimetable">
-                    Teaching Timetable
-                  </a></li>
-                  <li><a data-toggle="tab" href="#dates">
-                    Start/End Dates
-                  </a></li>
-                </ul>
+      <div class="panel panel-primary" id="primary-buffer-panel"> <!-- Keep flying! -->
+        <div class="panel-body">
+          <div class="row course-detail-row">
+            <div class="col-sm-3">
+              <label>Subject</label>: TESTSCI
+            </div>
+            <div class="col-sm-3">
+              <label>Catalog Number</label>: 101
+            </div>
+            <div class="col-sm-3">
+              <label>Course ID</label>: 01938
+            </div>
+            <div class="col-sm-3">
+              <label>Year</label>: 2017 <span class="label label-xs label-warning">NEXT YEAR</span>
+            </div>
+          </div> <!-- course details row -->
+            <div class="col-sm-3">
+              <label>Acad Org</label>: ETSO
+            </div>
+            <div class="col-sm-3">
+              <label>Acad Group</label>: UOFAK
+            </div>
+            <div class="col-sm-3">
+              <label>Credit Provided</label>: 30
+            </div>
+            <div class="col-sm-3">
+              <button type="button" class="btn btn-default btn-xs">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </button>
+              1 of 3                
+              <button type="button" class="btn btn-default btn-xs">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </button>
+            </div>
+          </div> <!-- course details row -->
+          <div class="row course-detail-row">
+            <div class="col-sm-6">
+              <label>Long Course Title</label>: Existential Timetabling and Other Experiments
+            </div>
+            <div class="col-sm-3">
+              <label>Status</label>: Active
+            </div>
+            <div class="col-sm-3">
+              <button type="button" class="btn btn-xs btn-info">
+                Request change to Course Details
+              </button>
+            </div>
+          </div> <!-- course details row -->
+          
+          <div class="row padded-row"> <!-- offerings row -->
+            <div class="panel panel-info" id="offerings-panel">
+              <div class="panel-body">
+                <div class="row" id="offerings-header-row">
+                  <div class="col-sm-2">
+                    <label>Term</label>
+                  </div>
+                  <div class="col-sm-2">
+                    <label>Campus</label>
+                  </div>
+                  <div class="col-sm-2">
+                    <label>Expected Enrolments</label>
+                  </div>
+                  <div class="col-sm-2">
+                    <label>Current Enrolments</label>
+                  </div>
+                  <div class="col-sm-2">
+                    <label>Cancel Offering</label>
+                  </div>
+                  <div class="col-sm-2">
+                    <button type="button" class="btn btn-xs btn-info">
+                      Add offering
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">SS (Summer School)</div>
+                  <div class="col-sm-2">C (City)</div>
+                  <div class="col-sm-2">120</div>
+                  <div class="col-sm-2">116</div>
+                  <div class="col-sm-2">
+                    <button type="button" class="btn btn-xs btn-danger">
+                      Cancel
+                    </button>
+                  </div>
+                  <div class="col-sm-2"></div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">S1 (Semester One)</div>
+                  <div class="col-sm-2">T (Tamaki)</div>
+                  <div class="col-sm-2">250</div>
+                  <div class="col-sm-2">147</div>
+                  <div class="col-sm-2">
+                    <button type="button" class="btn btn-xs btn-danger">
+                      Cancel
+                    </button>
+                  </div>
+                  <div class="col-sm-2"></div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">S2 (Semester Two)</div>
+                  <div class="col-sm-2">T (Tamaki)</div>
+                  <div class="col-sm-2">250</div>
+                  <div class="col-sm-2">63</div>
+                  <div class="col-sm-2">
+                    <button type="button" class="btn btn-xs btn-danger">
+                      Cancel
+                    </button>
+                  </div>
+                  <div class="col-sm-2"></div>
+                </div>
+
+                <div class="structure_and_delivery_details_here_now marginated margin-top-10">
+                  <!-- what kind of class is this?! -->
+                  <ul class="nav nav-tabs">
+                    <li>
+                      <a data-toggle="tab" href="#structure">Structure and Delivery</a>
+                    </li>
+                    <li class="active">
+                      <a data-toggle="tab" href="#examination">Examination and Assessment</a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#timetables">Timetables</a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#enrolment">Enrolment Tracking</a>
+                    </li>
+                  </ul>
+
+
                   <div class="panel-body tab-content">
-                    <div id="structure" class="tab-pane active in">
+                    <div id="structure" class="tab-pane">
                       <div class="row">
                         <div class="col-sm-12">
-                          <p class="left-margin">
-                            <label class="info">Course ID</label>: 919191
-                          </p>
-                          <div class="panel panel-info">
-                            <div class="panel-body">
-                              <div class="row">
-                                <div class="col-sm-3">
-                                  <p><label>Course</label>: TESTSCI 101</p>
-                                  <p><label>Department</label>: ETSO</p>
-                                </div>
-                                <div class="col-sm-3">
-                                  <p><label>Year</label>: 2015 <span class="label label-xs label-warning">NEXT YEAR</span></p>
-                                  <p><label>Faculty</label>: ACADSERV</p>
-                                </div>
-                                <div class="col-sm-3">
-                                  <p><label>Status</label>: Active</p>   
-                                  <p><label>Credit Provided</label>: 15</p>                             
-                                </div>
-                                <div class="col-sm-3">
-                                  <p><button type="button" class="btn btn-xs btn-info">
-                                    Request change (APO)
-                                  </button></p>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-sm-12">
-                                  <p><label>Offerings</label></p>
-                                  <span class="col-sm-9"><table class="table">
-                                    <thead>
-                                      <th></th>
-                                      <th>Term</th>
-                                      <th>Campus</th>
-                                      <th>Expected Enrolments</th>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>
-                                          <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-pencil"></span>
-                                          </button>
-                                          <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-trash"></span>
-                                          </button>
-                                        </td>
-                                        <td>S1</td>
-                                        <td>C</td>
-                                        <td>200</td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-pencil"></span>
-                                          </button>
-                                          <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-trash"></span>
-                                          </button>
-                                        </td>
-                                        <td>S1</td>
-                                        <td>T</td>
-                                        <td>50</td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-pencil"></span>
-                                          </button>
-                                          <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-trash"></span>
-                                          </button>
-                                        </td>
-                                        <td>S2</td>
-                                        <td>C</td>
-                                        <td>100</td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-pencil"></span>
-                                          </button>
-                                          <button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-trash"></span>
-                                          </button>
-                                        </td>
-                                        <td>S</td>
-                                        <td>C</td>
-                                        <td>75</td>
-                                      </tr>
-                                    </tbody>
-                                  </table></span>
-                                </div>
-                              </div>
-                            </div><!-- current effective date panel -->
-                          </div>
+                          Dates
                         </div>
                       </div>
-                    </div><!-- /structure -->
-                    <div id="coursework" class="tab-pane">
-                      Coursework and lolcats
-                    </div><!-- /coursework -->
-                    <div id="examiners" class="tab-pane">
-                      Examiners and lolcats
-                    </div><!-- /examiners -->
-                    <div id="termtests" class="tab-pane">
-                      Term Cats
-                    </div><!-- /termtests -->
-                    <div id="examination" class="tab-pane">
-                      Examination Details
-                    </div><!-- /examination -->
-                    <div id="examtimetable" class="tab-pane">
-                      When is my exam?!
-                    </div><!-- /examtimetable -->
-                    <div id="teachingtimetable" class="tab-pane">
-                      When do I teach?!
-                    </div><!-- /teachingtimetable -->
-                    <div id="dates" class="tab-pane">
-                      Start/end dates
-                    </div><!-- /dates -->
-                </div>
-              </div>
-            </div>
-          </div><!-- /panel-primary -->
-        </div>
-      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Components
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Delivery
+                        </div>
+                      </div>
+                    </div> <!-- Structure and Delivery -->
+
+                    <div id="examination" class="tab-pane active in">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Coursework and Exam Details
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Examiners and Assessors
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Tests
+                        </div>
+                      </div>
+                    </div> <!-- Examination and Assessment -->
+
+                    <div id="timetables" class="tab-pane">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Exam Timetable
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Teaching Timetables
+                        </div>
+                      </div>
+                    </div> <!-- Timetables -->
+
+                    <div id="enrolment" class="tab-pane">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Class Enrolments
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          Historical Enrolments
+                        </div>
+                      </div>
+                    </div> <!-- Enrolment -->
+                </div> <!-- offering details -->
+
+              </div> <!-- row for the offerings content -->
+            </div> <!-- offerings panel -->
+          </div> <!-- offerings row -->
+        </div> <!-- main panel-body -->
+      </div> <!-- panel #primary-buffer-panel -->
 
     </div> <!-- /container -->
 
