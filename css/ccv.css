@@ -108,3 +108,7 @@
 .padded-row {
   padding: 15px;
 }
+
+.clickable{
+    cursor: pointer;   
+}
