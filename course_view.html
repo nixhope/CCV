@@ -34,6 +34,8 @@
           <li><a href="#">Timeline</a></li>
           <li><a href="#">Tasks</a></li>
           <li><a href="#">Reports and Metrics</a></li>
+          <li><a href="#">Alerts and Monitoring</a></li>
+          <li><a href="#">Feedback and Help</a></li>
       </div>
     </div><!-- /nav container-->
 
@@ -168,69 +170,252 @@
                     </li>
                   </ul>
 
-
                   <div class="panel-body tab-content">
-                    <div id="structure" class="tab-pane">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          Dates
+                    <div id="structure" class="tab-pane"> <!-- Structure and Delivery -->
+                      <div class="row"> <!-- Dates row -->
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#dates-panel">
+                            Dates
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="dates-panel">
+                            <div class="panel-body">
+                              Dates details will go here
+                            </div> <!-- dates panel body -->
+                          </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          Components
+                      </div> <!-- Dates row -->
+                      <div class="row"> <!-- Components row -->
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#components-panel">
+                            Components
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="components-panel">
+                            <div class="panel-body">
+                              Components details will go here
+                            </div> <!-- components panel body -->
+                          </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          Delivery
+                      </div> <!-- Components row -->
+                      <div class="row"> <!-- Delivery row -->
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#delivery-panel">
+                            Delivery
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="delivery-panel">
+                            <div class="panel-body">
+                              Delivery details will go here
+                            </div> <!-- delivery panel body -->
+                          </div>
                         </div>
-                      </div>
+                      </div> <!-- Delivery row -->
                     </div> <!-- Structure and Delivery -->
 
-                    <div id="examination" class="tab-pane active in">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          Coursework and Exam Details
+                    <div id="examination" class="tab-pane active in"> <!-- Examiners and Assessors -->
+
+                      <div class="row"> <!-- coursework row -->
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#coursework-panel">
+                            Coursework and Exam Details
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="coursework-panel">
+                            <div class="panel-body">
+                              Coursework details and exam details will go here
+                            </div> <!-- coursework panel body -->
+                          </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          Examiners and Assessors
+                      </div> <!-- coursework row -->
+
+                      <div class="row"> <!-- examiners row -->
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#examiners-panel">
+                            Examiners and Assessors (*normally collapsed*)
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse in" id="examiners-panel">
+                            <div class="panel-body">
+                              <table id="examiners-table" class="table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Username</th>
+                                    <th>ID</th>
+                                    <th>Print</th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Mark Thomson</td>
+                                    <td>Assessor</td>
+                                    <td>mtho257</td>
+                                    <td>9132546</td>
+                                    <td><input type="checkbox"/></td>
+                                    <td>
+                                      <button type="button" class="btn btn-xs btn-warning">
+                                        Edit
+                                      </button>
+                                      <button type="button" class="btn btn-xs btn-danger">
+                                        Delete
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jin Koo Niersbach</td>
+                                    <td>Examiner</td>
+                                    <td>jnie014</td>
+                                    <td>1521878</td>
+                                    <td><input type="checkbox"/></td>
+                                    <td>
+                                      <button type="button" class="btn btn-xs btn-warning">
+                                        Edit
+                                      </button>
+                                      <button type="button" class="btn btn-xs btn-danger">
+                                        Delete
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Darren Woodward</td>
+                                    <td>Academic Head</td>
+                                    <td>dwoo016</td>
+                                    <td>1458451</td>
+                                    <td><input type="checkbox"/></td>
+                                    <td>
+                                      <button type="button" class="btn btn-xs btn-warning">
+                                        Edit
+                                      </button>
+                                      <button type="button" class="btn btn-xs btn-danger">
+                                        Delete
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Alamelu Badrinarayanan</td>
+                                    <td>Course Director</td>
+                                    <td>abad004</td>
+                                    <td>4845216</td>
+                                    <td><input type="checkbox"/></td>
+                                    <td>
+                                      <button type="button" class="btn btn-xs btn-warning">
+                                        Edit
+                                      </button>
+                                      <button type="button" class="btn btn-xs btn-danger">
+                                        Delete
+                                      </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="6">
+                                      <input type="text" placeholder="Username or ID number"/>
+                                      <select name="examiner-role">
+                                        <option value="academic-head">Academic Head</option>
+                                        <option value="assessor" selected>Assessor</option>
+                                        <option value="course-coordinator">Course Coordinator</option>
+                                        <option value="course-director">Course Director</option>
+                                        <option value="examiner">Examiner</option>
+                                        <option value="external-assessor">External Assessor</option>
+                                        <option value="external examiner">External Examiner</option>
+                                        <option value="moderator">Moderator</option>
+                                      </select>
+                                      <button type="button" class="btn btn-s btn-success">Add New</button>
+                                    </td>
+                                  </tr>
+                                </tbody>                              
+                              </table>
+                              <small>
+                                NB: please note the following rules apply when appointing examiners and assessors for a course:
+                                <ul>
+                                  <li>A course may only have X Y Z</li>
+                                  <li>An examined course must have A B C</li>
+                                </ul>
+                                For further details, please refer to the <a href="https://www.staff.auckland.ac.nz/en/teaching-and-students/services-for-students/examinations/examiners-and-assessors.html" target="new">Instructions to Examiners and Assessors</a>.
+                              </small>
+                            </div> <!-- examiners panel body -->
+                          </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          Tests
+                      </div> <!-- examiners row -->
+
+                      <div class="row"> <!-- tests row -->
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#tests-panel">
+                            Term Tests
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="tests-panel">
+                            <div class="panel-body">
+                              Term test details including dates, times and room allocations will go here
+                            </div> <!-- tests panel body -->
+                          </div>
                         </div>
-                      </div>
+                      </div> <!-- tests row -->
+
                     </div> <!-- Examination and Assessment -->
 
-                    <div id="timetables" class="tab-pane">
+                    <div id="timetables" class="tab-pane"> <!-- Timetables -->
                       <div class="row">
-                        <div class="col-sm-12">
-                          Exam Timetable
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#exam-timetable-panel">
+                            Exam Timetable
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="exam-timetable-panel">
+                            <div class="panel-body">
+                              Exam timetable details will go here
+                            </div> <!-- exam timetable panel body -->
+                          </div>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-12">
-                          Teaching Timetables
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#teaching-timetable-panel">
+                            Teaching Timetable
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="teaching-timetable-panel">
+                            <div class="panel-body">
+                              Teaching timetable details will go here
+                            </div> <!-- teaching timetable panel body -->
+                          </div>
                         </div>
                       </div>
                     </div> <!-- Timetables -->
 
-                    <div id="enrolment" class="tab-pane">
+                    <div id="enrolment" class="tab-pane"> <!-- Enrolment Tracking -->
                       <div class="row">
-                        <div class="col-sm-12">
-                          Class Enrolments
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#class-enrolments-panel">
+                            Class Enrolments
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="class-enrolments-panel">
+                            <div class="panel-body">
+                              Class enrolment details will go here
+                            </div> <!-- class enrolment panel body -->
+                          </div>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-12">
-                          Historical Enrolments
+                        <div class="panel panel-primary">
+                          <div class="panel-heading clickable" data-toggle="collapse" data-target="#historical-enrolments-panel">
+                            Historical Enrolments
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                          </div>
+                          <div class="collapse" id="historical-enrolments-panel">
+                            <div class="panel-body">
+                              Historical enrolment details will go here
+                            </div> <!-- historical enrolment panel body -->
+                          </div>
                         </div>
                       </div>
                     </div> <!-- Enrolment -->
+
+                  </div> <!-- offerings panel-body -->
+                    
                 </div> <!-- offering details -->
 
               </div> <!-- row for the offerings content -->
